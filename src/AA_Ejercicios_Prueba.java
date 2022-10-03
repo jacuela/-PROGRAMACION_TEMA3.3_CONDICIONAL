@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author juan.antonio
  */
-public class AA_Ejercicios_Libro {
+public class AA_Ejercicios_Prueba {
 
     /**
      * @param args the command line arguments
@@ -20,32 +20,48 @@ public class AA_Ejercicios_Libro {
         // TODO code application logic here
         Scanner teclado=new Scanner(System.in);
         
+        
+        //Ejemplo0 - if
         System.out.print("Introduce una nota: ");
-        int nota=Integer.parseInt(teclado.nextLine());
+        int nota=teclado.nextInt();
         
         if (nota >= 5){
             System.out.println("Has aprobado!!!");
         }
-        else
+        
+        System.out.println("FIN");
+       
+        
+        
+        //Ejemplo1 - if..else
+        System.out.print("Introduce una nota: ");
+        int nota2=Integer.parseInt(teclado.nextLine());
+        
+        if (nota2 >= 5){
+            System.out.println("Has aprobado!!!");
+        }
+        else{
             System.out.println("Lo siento. Has suspendio."); 
         
         System.out.println("FIN");
         
+        
+        //Ejemplo2 - comparo cadena en positivo
         String fruta="naranja";
         
-        if (!fruta.equals("naranja")){
-            System.out.println("La fruta no es una naranja");
+        if (fruta.equals("naranja")){
+            System.out.println("La fruta es una naranja");
         }
         
-        int numero=6;
-        if (numero!=5){
-            System.out.println("El numero es distinto de 5");
+        //Ejemplo3 - comparo cadena en negativo
+        String fruta2="limon";
+        if (!fruta2.equals("naranja")){
+            System.out.println("La fruta2 no es una naranja");
         }
-        else{
-            System.out.println("El numero es 5");
-        }    
-
-        //Indicar si un numero esta entre 1 y 100
+        
+          
+            
+        //Ejemplo 4 - Indicar si un numero esta entre 1 y 100
         int numero2=200;
           
         if (numero2>=1 && numero2<=100){
@@ -54,6 +70,24 @@ public class AA_Ejercicios_Libro {
         else{
             System.out.println("El numero no esta entre 1 y 100");  
         }
+
+
+        
+        //Ejemplo 5 - If..else anidados
+        int hora;
+        System.out.print("Introduzca una hora (>= 0 y <= 23): ");                                                 
+        hora = teclado.nextInt();
+        if (hora >= 0 && hora < 12) {
+            System.out.println("Buenos días");
+        } else if (hora >= 12 && hora < 21) {
+            System.out.println("Buenas tardes");
+        } else if (hora >= 21 && hora < 24) {
+            System.out.println("Buenas noches");
+        } else {
+            System.out.println("Hora no válida");
+        }
+        System.out.println("Hasta pronto!!!");      
+        
 
 
 
