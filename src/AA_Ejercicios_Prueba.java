@@ -42,7 +42,7 @@ public class AA_Ejercicios_Prueba {
         }
         else{
             System.out.println("Lo siento. Has suspendio."); 
-        
+        }
         System.out.println("FIN");
         
         
