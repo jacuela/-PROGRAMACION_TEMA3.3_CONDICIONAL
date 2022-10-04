@@ -77,6 +77,8 @@ public class AA_Ejercicios_Prueba {
         int hora;
         System.out.print("Introduzca una hora (>= 0 y <= 23): ");                                                 
         hora = teclado.nextInt();
+        
+        
         if (hora >= 0 && hora < 12) {
             System.out.println("Buenos días");
         } else if (hora >= 12 && hora < 21) {
