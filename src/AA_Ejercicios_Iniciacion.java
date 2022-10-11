@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author juan.antonio
  */
-public class AA_Ejercicios_Prueba {
+public class AA_Ejercicios_Iniciacion {
 
     /**
      * @param args the command line arguments
