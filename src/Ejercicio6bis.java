@@ -22,9 +22,9 @@ public class Ejercicio6bis {
         Scanner teclado=new Scanner(System.in);
         int dia,mes,year;
         
-        boolean yearCorrecto=false;
-        boolean mesCorrecto=false;
-        boolean diaCorrecto=false;
+        boolean yearCorrecto;
+        boolean mesCorrecto;
+        boolean diaCorrecto;
         
         
         System.out.print("Dime una fecha separada por espacios [d m a]:");
@@ -36,19 +36,27 @@ public class Ejercicio6bis {
         if (year >=1900 && year <=2500){
             yearCorrecto=true;
         }
+        else{
+            yearCorrecto=false;
+        }
                 
         //Analizo el mes
         if (mes >=1 && mes <=12){
             mesCorrecto=true;
         }
-    
-        
+        else{
+            mesCorrecto=false;
+        }
+      
         //Analizo el dia
         switch(mes){
             case 1,3,5,7,8,10,12:
                 //Meses de 31 dias
                 if (dia >=1 && dia<=31){
                     diaCorrecto=true;
+                }
+                else{
+                    diaCorrecto=false;
                 }
                                  
                 break;
@@ -57,25 +65,36 @@ public class Ejercicio6bis {
                 if (dia >=1 && dia<=30){
                     diaCorrecto=true;
                 }
+                else{
+                    diaCorrecto=false;
+                }
                 
                 break;
             case 2:
                 //Analizo febrero
                 //Si el año es bisiesto
                 if (Year.of(year).isLeap()){
-                    if (dia>=1 && dia<=29) 
+                    if (dia>=1 && dia<=29){ 
                         diaCorrecto=true;
-                    
-                }   
+                    }
+                    else{
+                        diaCorrecto=false;
+                    }
+                }
+                
                 //Si no es bisiesto
                 else{
-                    if (dia>=1 && dia<=28) 
+                    if (dia>=1 && dia<=28){ 
                         diaCorrecto=true;
-                   
+                    }
+                    else{
+                        diaCorrecto=false;
+                    }
                 }    
                 break;
-        }
-        
+            default:
+                diaCorrecto=false;
+       }
         
         //Llegado a este punto, tengo tres variables booleanas
         //que me indican si son o no correctos el año, mes u dia
@@ -84,11 +103,6 @@ public class Ejercicio6bis {
         else
            System.out.println("\033[31m La fecha es incorrecta");
             
-        
-        
-        
-        
-        
         
     }
     

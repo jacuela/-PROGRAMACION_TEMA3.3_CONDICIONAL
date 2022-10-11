@@ -48,12 +48,6 @@ public class Ejercicio6 {
             case 1,3,5,7,8,10,12:
                 //Meses de 31 dias
                 
-                
-                
-                
-                
-                
-                
                 if (dia >=1 && dia<=31){
                     System.out.println("El dia es CORRECTO");
                 }
@@ -88,17 +82,10 @@ public class Ejercicio6 {
                         System.out.println("ERROR en el dia");
                 }    
                 break;
+            default: 
+                System.out.println("ERROR en el mes");
+                
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
     }
     
