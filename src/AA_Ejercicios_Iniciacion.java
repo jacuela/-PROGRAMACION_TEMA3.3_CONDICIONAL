@@ -20,78 +20,120 @@ public class AA_Ejercicios_Iniciacion {
         // TODO code application logic here
         Scanner teclado=new Scanner(System.in);
         
+//        //Ejemplo0 - if
+//        System.out.print("Introduce una nota: ");
+//        int nota=Integer.parseInt(teclado.nextLine());
+//        
+//        if (nota >= 5){
+//            System.out.println("Has aprobado!!!");
+//        }
+//        
+//        System.out.println("FIN");
+//       
+//        
+//        //Ejemplo1 - if..else
+//        System.out.print("Introduce una nota: ");
+//        int nota2=Integer.parseInt(teclado.nextLine());
+//        
+//        if (nota2 >= 5){
+//            System.out.println("Has aprobado!!!");
+//            System.out.println("Eres un campeon!");
+//        }
+//        else{
+//            System.out.println("Lo siento. Has suspendio.");
+//            System.out.println("Hoy no sales.");
+//        }
+//        System.out.println("FIN");
+//        
+//        
+//        //Ejemplo2 - comparo cadena en positivo
+//        String fruta="naranja";
+//        
+//        if (fruta.equals("naranja")){
+//            System.out.println("La fruta es una naranja");
+//        }
+//        
+//        //Ejemplo3 - comparo cadena en negativo
+//        String fruta2="limon";
+//        if (!fruta2.equals("naranja")){
+//            System.out.println("La fruta2 no es una naranja");
+//        }
+//        
+//          
+//            
+//        //Ejemplo 4 - Indicar si un numero esta entre 1 y 100
+//        int numero2=200;
+//          
+//        if (numero2>=1 && numero2<=100){
+//          System.out.println("El numero esta enter 1 y 100");
+//        }
+//        else{
+//            System.out.println("El numero no esta entre 1 y 100");  
+//        }
+//
+//        //Ejemplo - Condicion con OR
+//        String nombre="Juan";
+//        if (nombre.equals("Juan") || nombre.equals("Juanito")){
+//            System.out.println("Puedes entrar. Los juanes son vienbenidos");
+//        }
+//            
+//        else{
+//            System.out.println("Tu nombre no me gusta. Bye bye");
+//        }
+//        
+//        
+//        //Ejemplo 5 - If..elseif..else
+//        int hora;
+//        System.out.print("Introduzca una hora (>= 0 y <= 23): ");                                                 
+//        hora = Integer.parseInt(teclado.nextLine());
+//        
+//        
+//        if (hora >= 0 && hora < 12) {
+//            System.out.println("Buenos días");
+//        } else if (hora >= 12 && hora < 21) {
+//            System.out.println("Buenas tardes");
+//        } else if (hora >= 21 && hora < 24) {
+//            System.out.println("Buenas noches");
+//        } else {
+//            System.out.println("Hora no válida");
+//        }
+//        System.out.println("Hasta pronto!!!");      
         
-        //Ejemplo0 - if
-        System.out.print("Introduce una nota: ");
-        int nota=teclado.nextInt();
+
+        //Ejemplo6 - if..esle anidados
+        //Si soy menor de edad, me quedo en casa jugando. Si soy mayor de edad, depende:
+        //si tengo dinero salgo de fiesta, sino, me voy a pasear.
         
-        if (nota >= 5){
-            System.out.println("Has aprobado!!!");
+        System.out.print("Dime la edad:");
+        int edad=Integer.parseInt(teclado.nextLine());
+        
+        System.out.print("¿Tienes dinero [S | N]?:");
+        String si_no=teclado.nextLine();
+        //Paso a booleano la respueta s_n
+        boolean tengo_dinero;
+        if (si_no.equals("S")){
+            tengo_dinero=true;
+        }
+        else {
+             
+            tengo_dinero=false;
         }
         
-        System.out.println("FIN");
-       
         
-        
-        //Ejemplo1 - if..else
-        System.out.print("Introduce una nota: ");
-        int nota2=Integer.parseInt(teclado.nextLine());
-        
-        if (nota2 >= 5){
-            System.out.println("Has aprobado!!!");
+        if (edad<18){
+            System.out.println("Me quedo jugando a la play");
         }
         else{
-            System.out.println("Lo siento. Has suspendio."); 
-        }
-        System.out.println("FIN");
-        
-        
-        //Ejemplo2 - comparo cadena en positivo
-        String fruta="naranja";
-        
-        if (fruta.equals("naranja")){
-            System.out.println("La fruta es una naranja");
+            if (tengo_dinero==true){
+                System.out.println("Me voy de fiesta!!");
+            }
+            else{
+                System.out.println("Me voy a pasear (sin €)");
+            }
         }
         
-        //Ejemplo3 - comparo cadena en negativo
-        String fruta2="limon";
-        if (!fruta2.equals("naranja")){
-            System.out.println("La fruta2 no es una naranja");
-        }
-        
-          
-            
-        //Ejemplo 4 - Indicar si un numero esta entre 1 y 100
-        int numero2=200;
-          
-        if (numero2>=1 && numero2<=100){
-          System.out.println("El numero esta enter 1 y 100");
-        }
-        else{
-            System.out.println("El numero no esta entre 1 y 100");  
-        }
-
-
-        
-        //Ejemplo 5 - If..else anidados
-        int hora;
-        System.out.print("Introduzca una hora (>= 0 y <= 23): ");                                                 
-        hora = teclado.nextInt();
         
         
-        if (hora >= 0 && hora < 12) {
-            System.out.println("Buenos días");
-        } else if (hora >= 12 && hora < 21) {
-            System.out.println("Buenas tardes");
-        } else if (hora >= 21 && hora < 24) {
-            System.out.println("Buenas noches");
-        } else {
-            System.out.println("Hora no válida");
-        }
-        System.out.println("Hasta pronto!!!");      
-        
-
-
 
 
           //USO DEL SWITCH
