@@ -27,6 +27,8 @@ public class Ejercicio6 {
         mes=teclado.nextInt();
         year=teclado.nextInt();
         
+        System.out.println("Fecha a analizar: "+dia+"/"+mes+"/"+year);
+        
         //Analizo el año
         if (year >=1900 && year <=2500){
             System.out.println("El año es CORRECTO");

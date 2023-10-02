@@ -71,9 +71,9 @@ public class Ejercicio8 {
             inicialN2=nombre.charAt(nombre.indexOf(' ')+1);
             nombreCompuesto=true;
         }
-        else
+        else{
             nombreCompuesto=false;   //no sería necesario pues es false por defecto
-   
+        }    
         
         inicialN1=nombre.charAt(0);
         inicialA1=apellido1.charAt(0);

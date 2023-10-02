@@ -42,22 +42,26 @@ public class Ejercicio3 {
         System.out.println("---------------------------------------");
         System.out.println("La nota de la evaluación es:"+notaEvaluacion);
         
-        System.out.print("Tu calificación es: ");
+        String calificaicion="sin calificacion";
+        
+        
         
         if (notaEvaluacion<5){
-            System.out.println("SUSPENSO");
+            calificaicion="SUSPENSO";
         } else if (notaEvaluacion <6){
-            System.out.println("SUFICIENTE");
+            calificaicion="SUFICIENTE";
         } else if (notaEvaluacion <7){
-            System.out.println("BIEN");
+            calificaicion="BIEN";
         } else if (notaEvaluacion <9){
-            System.out.println("NOTABLE");
+            calificaicion="NOTABLE";
         } else if (notaEvaluacion <10){
-            System.out.println("SOBRESALIENTE");
+            calificaicion="SOBRESALIENTE";
         } else if (notaEvaluacion == 10){
-            System.out.println("MATRICULA DE HONOR");
+            calificaicion="MATRICULA DE HONOR";
+
         }
-        
+        System.out.print("Tu calificación es: "+calificaicion);
+       
         
         
         

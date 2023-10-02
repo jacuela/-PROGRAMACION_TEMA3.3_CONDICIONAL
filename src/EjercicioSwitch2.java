@@ -28,9 +28,7 @@ public class EjercicioSwitch2 {
             case 1,2,4,5:
                     System.out.println("Hay PROGRAMACION");
                     break;
-            case 3:
-            case 6:
-            case 7: 
+            case 3,6,7:
                     System.out.println("Hoy no hay. Que pena!!");
                     break;
             default:

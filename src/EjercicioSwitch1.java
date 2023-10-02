@@ -44,6 +44,27 @@ public class EjercicioSwitch1 {
         }
        
         
+        //ejercicio switch2
+        switch (dia){
+            case 1,2,3,4: 
+                    System.out.println("Sí hay PROGRAMACION. BIEN :)");
+                    break;
+            case 5,6,7: 
+                    System.out.println("No hay PROGRAMACION.");
+                    System.out.println("Que pena");
+                    System.out.println("No voy a dormir");
+                    break;
+            default:
+                    System.out.println("ERROR: dia incorrecto");            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
         
         
         

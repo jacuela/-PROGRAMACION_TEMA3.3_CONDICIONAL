@@ -30,31 +30,31 @@ public class Ejercicio2 {
         System.out.print("Password:");
         password=entrada.nextLine();
         
-//        //OPCION1
-//        if (usuario.equals("root") && password.equals("toor")){
-//           
-//            System.out.println("OP1:Login correcto. Welcome.");
-//        
-//        }else{
-//            System.out.println("OP1:Login incorrecto. Bye...");
-//            
-//        }
+        //OPCION1
+        if (usuario.equals("root") && password.equals("toor")){
+           
+            System.out.println("OP1:Login correcto. Welcome.");
         
-//        //OPCION2
-//        if (usuario.equals("root")){
-//            //Si llego aquí, el usuario es correcto
-//            if (password.equals("toor")){
-//                //Si llego aqui, la contraseña tb es correcta
-//                System.out.println("OP2:Login correcto. Welcome.");
-//            }
-//            else{
-//                //Usuario correcto PERO contraseña incorrecta
-//                 System.out.println("OP2:Contraseña erronea. Bye");
-//            }
-//        }
-//        else{
-//            System.out.println("OP2: usuario incorrecto"); 
-//        }
+        }else{
+            System.out.println("OP1:Login incorrecto. Bye...");
+            
+        }
+        
+        //OPCION2
+        if (usuario.equals("root")){
+            //Si llego aquí, el usuario es correcto
+            if (password.equals("toor")){
+                //Si llego aqui, la contraseña tb es correcta
+                System.out.println("OP2:Login correcto. Welcome.");
+            }
+            else{
+                //Usuario correcto PERO contraseña incorrecta
+                 System.out.println("OP2:Contraseña erronea. Bye");
+            }
+        }
+        else{
+            System.out.println("OP2: usuario incorrecto"); 
+        }
         
         //OPCION3 - usando booleanos
         boolean usuarioOK=false;

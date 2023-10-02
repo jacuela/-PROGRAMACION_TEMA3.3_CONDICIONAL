@@ -51,7 +51,7 @@ public class Ejercicio5 {
         //Year.of(year).isLeap();
         
         
-        if (Year.of(year).isLeap())
+        if (Year.of(year).isLeap()==true)
             System.out.println("El año "+year+" Sí es bisiesto.");
         else
             System.out.println("El año "+year+" NO es bisiesto.");

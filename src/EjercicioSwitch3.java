@@ -28,16 +28,17 @@ public class EjercicioSwitch3 {
         System.out.print("Color del semaforo:");
         color=teclado.nextLine();
         
+        color=color.toLowerCase(); //convierto a minuscula
         
         
         switch(color){
-            case "verde","VERDE":
+            case "verde":
                         System.out.println("Puedes pasar.");
                         break;
-            case "rojo","ROJO": 
+            case "rojo": 
                         System.out.println("STOP!!!!!");
                         break;
-            case "ambar","AMBAR":
+            case "ambar":
                         System.out.print("Dime la edad:");
                         edad=Integer.parseInt(teclado.nextLine());
                         if (edad<20){
