@@ -44,8 +44,6 @@ public class Ejercicio3 {
         
         String calificaicion="sin calificacion";
         
-        
-        
         if (notaEvaluacion<5){
             calificaicion="SUSPENSO";
         } else if (notaEvaluacion <6){

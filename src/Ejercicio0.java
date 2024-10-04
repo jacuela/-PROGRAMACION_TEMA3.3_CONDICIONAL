@@ -22,22 +22,24 @@ public class Ejercicio0 {
         //Indicar si un numero es par o impar
         Scanner entrada = new Scanner(System.in);
         
+        boolean esPar;
+        
         System.out.print("Dime un numero:");
         int numero=Integer.parseInt(entrada.nextLine());
         
         if (numero % 2 == 0){
             System.out.println("El numero es par.");
+            esPar=true;
+            
         }
         else{
             System.out.println("El numero es impar.");
+            esPar=false;
             
         }
         
         //Usando un booleano. Aquí no es muy eficiente pero nos ayuda
         //a comprender qué es un valor booleano
-       
-        boolean esPar=(numero%2==0);
-        
         if (esPar==true){
             System.out.println("El numero es par(usando booleano");
         }
