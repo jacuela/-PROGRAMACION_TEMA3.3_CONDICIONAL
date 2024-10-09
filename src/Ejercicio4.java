@@ -27,8 +27,9 @@ public class Ejercicio4 {
         LocalTime horaLocal=LocalTime.now();
         System.out.println("Hora Local:"+horaLocal);
         int hora=horaLocal.getHour();
+        
 
-
+        
         //******** USANDO IF *********************
         System.out.println("Son las "+hora);
         
@@ -42,27 +43,24 @@ public class Ejercicio4 {
             System.out.println("BUENOS TARDES.");
          
         }
-//        else if (hora>=21 && hora <=24){
-//          //  System.out.println("Son las "+hora);
-//            System.out.println("BUENAS NOCHES.ZZZZZZ.");
-//        }
-//        else if (hora>=0 && hora <=5){
-//          //  System.out.println("Son las "+hora);
-//            System.out.println("BUENAS NOCHES.ZZZZZZ.");
-//        } 
-        
-        //Usando una condicion múltiple para la noche
-        else if ((hora>=21 && hora <=24) || (hora>=0 && hora <=5)){
+        else if (hora>=21 && hora <=24){
+          //  System.out.println("Son las "+hora);
             System.out.println("BUENAS NOCHES.ZZZZZZ.");
         }
+        else if (hora>=0 && hora <=5){
+          //  System.out.println("Son las "+hora);
+            System.out.println("BUENAS NOCHES.ZZZZZZ.");
+        } 
+        
+        //Usando una condicion múltiple para la noche
+//        else if ((hora>=21 && hora <=24) || (hora>=0 && hora <=5)){
+//            System.out.println("BUENAS NOCHES.ZZZZZZ.");
+//        }
         
         else {
             System.out.println("ERROR:Hora incorrecta"); 
         }
        
-
-        
-        
         
         
     }

@@ -29,7 +29,7 @@ public class EjercicioSwitch3 {
         color=teclado.nextLine();
         
         color=color.toLowerCase(); //convierto a minuscula
-        
+       
         
         switch(color){
             case "verde":

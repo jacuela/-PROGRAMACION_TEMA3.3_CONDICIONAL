@@ -68,21 +68,27 @@ public class Ejercicio6 {
                 }
                 break;
             case 2:
-                //Analizo febrero
-                //Si el año es bisiesto
+                //Analizo febrero. Pero primero veo si es bisiesto
                 if (Year.of(year).isLeap()){
-                    if (dia>=1 && dia<=29) 
+                    //El año SI es bisiesto 
+                    if (dia>=1 && dia<=29){
                         System.out.println("El dia es CORRECTO");
-                    else
+                    }
+                    else{
                         System.out.println("ERROR en el dia");
-                }   
-                //Si no es bisiesto
+                    }
+                
+                }
                 else{
-                    if (dia>=1 && dia<=28) 
+                   //El año NO es bisiesto     
+                   if (dia>=1 && dia<=28){
                         System.out.println("El dia es CORRECTO");
-                    else
+                   }
+                   else{
                         System.out.println("ERROR en el dia");
-                }    
+                   }     
+                }
+                
                 break;
             default: 
                 System.out.println("ERROR en el mes");
@@ -92,3 +98,7 @@ public class Ejercicio6 {
     }
     
 }
+
+
+//Si el año es bisiesto
+              

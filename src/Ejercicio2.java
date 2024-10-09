@@ -56,26 +56,36 @@ public class Ejercicio2 {
             System.out.println("OP2: usuario incorrecto"); 
         }
         
-        //OPCION3 - usando booleanos
-        boolean usuarioOK=false;
-        boolean passwordOK=false;
         
-        //Primero, relleno las variables booleanas
-        if (usuario.equals("root")){ 
-            usuarioOK=true;
-        }    
-        if (password.equals("toor")){ 
-            passwordOK=true;
-        }
-            
-        //Segundo, las analizo
-        if (usuarioOK==true && passwordOK==true){
-            System.out.println("OP3: Login correcto");
-        }
-        else{
-            System.out.println("OP3: ERROR de login");
-
-        }
+        //OPCION3 - usando booleanos
+//        boolean usuarioOK=false;
+//        boolean passwordOK;
+//        
+//        //Primero, relleno las variables booleanas
+//        if (usuario.equals("root")){ 
+//            usuarioOK=true;
+//        }    
+//        else{
+//            usuarioOK=false;
+//        }
+//        
+//        
+//        if (password.equals("toor")){ 
+//            passwordOK=true;
+//        }
+//        else{
+//            passwordOK=false;
+//        }
+//            
+//        
+//        //Segundo, las analizo
+//        if (usuarioOK==true && passwordOK==true){
+//            System.out.println("OP3: Login correcto");
+//        }
+//        else{
+//            System.out.println("OP3: ERROR de login");
+//
+//        }
         
         
         

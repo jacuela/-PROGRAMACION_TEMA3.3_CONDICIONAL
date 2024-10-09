@@ -42,9 +42,12 @@ public class Ejercicio8 {
         
         //Comprobamos si es nombre simple o compuesto
         //Si hay un espacio en el nombre, es compuesto    
-        if (nombre.indexOf(' ')!=-1) {
+        
+        int posicionBlanco=nombre.indexOf(' ');
+        
+        if (posicionBlanco!=-1) {
             inicialN1=nombre.charAt(0);
-            int posicionBlanco=nombre.indexOf(' ');
+            //int posicionBlanco=nombre.indexOf(' ');
             inicialN2=nombre.charAt(posicionBlanco+1);
             inicialA1=apellido1.charAt(0);
             inicialA2=apellido2.charAt(0);
@@ -67,23 +70,23 @@ public class Ejercicio8 {
         
         //Comprobamos si es nombre simple o compuesto
         //Si hay un espacio en el nombre, es compuesto    
-        if (nombre.indexOf(' ')!=-1) {
-            inicialN2=nombre.charAt(nombre.indexOf(' ')+1);
-            nombreCompuesto=true;
-        }
-        else{
-            nombreCompuesto=false;   //no sería necesario pues es false por defecto
-        }    
-        
-        inicialN1=nombre.charAt(0);
-        inicialA1=apellido1.charAt(0);
-        inicialA2=apellido2.charAt(0);
-        
-        
-        if (nombreCompuesto==true)
-            System.out.println("Las iniciales del nombre son: "+inicialN1+inicialN2+inicialA1+inicialA2);
-        else
-            System.out.println("Las iniciales del nombre son: "+inicialN1+inicialA1+inicialA2);
+//        if (nombre.indexOf(' ')!=-1) {
+//            inicialN2=nombre.charAt(nombre.indexOf(' ')+1);
+//            nombreCompuesto=true;
+//        }
+//        else{
+//            nombreCompuesto=false;   //no sería necesario pues es false por defecto
+//        }    
+//        
+//        inicialN1=nombre.charAt(0);
+//        inicialA1=apellido1.charAt(0);
+//        inicialA2=apellido2.charAt(0);
+//        
+//        
+//        if (nombreCompuesto==true)
+//            System.out.println("Las iniciales del nombre son: "+inicialN1+inicialN2+inicialA1+inicialA2);
+//        else
+//            System.out.println("Las iniciales del nombre son: "+inicialN1+inicialA1+inicialA2);
           
       
        
